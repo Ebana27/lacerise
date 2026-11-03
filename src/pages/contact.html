@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact - La Cerise</title>
+	<link rel="stylesheet" href="./styles/contact.css">
+</head>
+<body>
+	<header class="__header">
+		<a class="__brand" href="./index.html">
+			<img class="__brand-logo" src="./assets/logo.png" alt="Logo La Cerise, emblème">
+			<span class="__brand-name">La Cerise</span>
+		</a>
+		<nav class="__nav" aria-label="Navigation principale">
+			<ul>
+				<li><a href="./index.html">Accueil</a></li>
+				<li><a href="./carte.html">Carte</a></li>
+				<li><a href="./apropos.html">À propos</a></li>
+				<li><a href="./contact.html" aria-current="page">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="__end_header">
+			<a class="__panier" href="#" aria-label="Voir le panier">
+				<img src="./assets/panier.png" alt=""><span>Panier (02)</span>
+			</a>
+			<button type="button" class="btn-secondary" id="btn-reserved">Réserver</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="__page-hero">
+			<h1 class="__main-title __page-titre">Contact</h1>
+			<p class="__main-cta-text">Une question, une réservation, une commande ?<br>Écrivez-nous, on vous répond vite.</p>
+		</section>
+
+		<section class="__contact">
+			<form class="__formulaire" action="#" method="post">
+				<h2>Envoyer un message</h2>
+				<div class="__champ">
+					<label for="nom">Nom complet</label>
+					<input type="text" id="nom" name="nom" autocomplete="name" required>
+				</div>
+				<div class="__champs-duo">
+					<div class="__champ">
+						<label for="email">Adresse e-mail</label>
+						<input type="email" id="email" name="email" autocomplete="email" required>
+					</div>
+					<div class="__champ">
+						<label for="telephone">Téléphone</label>
+						<input type="tel" id="telephone" name="telephone" autocomplete="tel">
+					</div>
+				</div>
+				<div class="__champ">
+					<label for="sujet">Sujet</label>
+					<select id="sujet" name="sujet">
+						<option>Réservation</option>
+						<option>Commande</option>
+						<option>Question</option>
+						<option>Autre</option>
+					</select>
+				</div>
+				<div class="__champ">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="6" required></textarea>
+				</div>
+				<button type="submit" class="btn-primary">Envoyer le message</button>
+			</form>
+
+			<aside class="__infos" aria-label="Informations pratiques">
+				<article class="__info __jaune"><h3>Adresse</h3><p>La Cerise<br>Moungali, Brazzaville<br>République du Congo</p></article>
+				<article class="__info __orange"><h3>Horaires</h3><p>Tous les jours<br>de 7 h à 21 h</p></article>
+				<article class="__info __rouge"><h3>Téléphone</h3><p>+242 00 000 00 00</p></article>
+			</aside>
+		</section>
+	</main>
+
+	<footer class="__pied">
+		<div class="__pied-contenu">
+			<div class="__pied-col"><strong>La Cerise</strong><p>Boulangerie-pâtisserie et restaurant, pour toute la famille.</p></div>
+			<div class="__pied-col"><h3>Navigation</h3><ul><li><a href="./index.html">Accueil</a></li><li><a href="./carte.html">Carte</a></li><li><a href="./apropos.html">À propos</a></li><li><a href="./contact.html">Contact</a></li></ul></div>
+			<div class="__pied-col"><h3>Nous trouver</h3><p>Moungali, Brazzaville<br>République du Congo</p></div>
+			<div class="__pied-col"><h3>Horaires</h3><p>Tous les jours<br>de 7 h à 21 h</p></div>
+		</div>
+		<p class="__pied-droits">© 2026 La Cerise. Tous droits réservés.</p>
+	</footer>
+</body>
+</html>

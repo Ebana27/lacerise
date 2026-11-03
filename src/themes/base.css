@@ -1,18 +1,26 @@
+/*
+    ----------------------------------------------
+                    base.css
+    ----------------------------------------------
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fredoka:wght@500;600&display=swap');
 
 :root {
   /* Couleurs */
   --cerise:  #CB0600;  /* primaire */
   --grenat:  #A4092D;  /* profondeur */
-  --creme:   #FFF8F0;  /* fond */
+  --background:   #FFFFFF;  /* fond */
   --beurre:  #FFC933;  /* accent unique */
   --encre:   #1F1F1F;  /* texte */
   --rose:    #FFE6EA;  /* surfaces */
-  --feuille: #2DA800;  /* logo / succès */
+  --feuille: #2DA800;  
+
+  --cerise-red: #F72D28;
 
   /* Typographie */
   --police-titre: 'Fredoka', 'DM Sans', sans-serif;
   --police-texte: 'DM Sans', system-ui, sans-serif;
 }
-body { font-family: var(--police-texte); color: var(--encre); background: var(--creme); }
+body { font-family: var(--police-texte); color: var(--encre); background: var(--background); }
 h1, h2, h3 { font-family: var(--police-titre); font-weight: 600; }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>À propos - La Cerise</title>
+	<link rel="stylesheet" href="./styles/apropos.css">
+</head>
+<body>
+	<header class="__header">
+		<a class="__brand" href="./index.html">
+			<img class="__brand-logo" src="./assets/logo.png" alt="Logo La Cerise, emblème">
+			<span class="__brand-name">La Cerise</span>
+		</a>
+		<nav class="__nav" aria-label="Navigation principale">
+			<ul>
+				<li><a href="./index.html">Accueil</a></li>
+				<li><a href="./carte.html">Carte</a></li>
+				<li><a href="./apropos.html" aria-current="page">À propos</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="__end_header">
+			<a class="__panier" href="#" aria-label="Voir le panier">
+				<img src="./assets/panier.png" alt=""><span>Panier (02)</span>
+			</a>
+			<button type="button" class="btn-secondary" id="btn-reserved">Réserver</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="__page-hero">
+			<h1 class="__main-title __page-titre">Notre histoire</h1>
+			<p class="__main-cta-text">Une boulangerie-pâtisserie de quartier,<br>faite avec soin, du matin au soir.</p>
+		</section>
+
+		<section class="__histoire">
+			<div class="__histoire-texte">
+				<h2>Née à Moungali</h2>
+				<p>La Cerise est née d'une idée simple : offrir à notre quartier du bon pain, des gâteaux soignés et une table où l'on a plaisir à revenir.</p>
+				<p>Chaque matin, nos pains et nos viennoiseries sortent du four. Chaque midi, nos plats sont préparés sur place avec des produits frais.</p>
+				<a class="btn-primary" href="./carte.html">Découvrir notre carte</a>
+			</div>
+			<div class="__histoire-visuel">
+				<img src="./assets/equipe.png" alt="L'équipe de La Cerise portant un gâteau et un plateau">
+			</div>
+		</section>
+
+		<section class="__valeurs" aria-labelledby="titre-valeurs">
+			<h2 class="__section-title" id="titre-valeurs">Ce qui compte pour nous</h2>
+			<div class="__valeurs-grille">
+				<article class="__valeur __jaune"><h3>Fait maison</h3><p>Nos recettes sont préparées dans notre cuisine, sans raccourci.</p></article>
+				<article class="__valeur __rouge"><h3>Toujours frais</h3><p>Cuisson tous les matins et produits choisis avec soin.</p></article>
+				<article class="__valeur __orange"><h3>Accueil chaleureux</h3><p>Chez nous, chacun est reçu comme à la maison.</p></article>
+			</div>
+		</section>
+
+		<section class="__marque" aria-label="Réserver ou commander">
+			<div class="__marque-bloc">
+				<img src="./assets/logo-blanc.png" alt="Emblème La Cerise, boulangerie-pâtisserie">
+				<p>Venez nous<br>rendre visite</p>
+			</div>
+			<div class="__marque-actions">
+				<a class="btn-primary" href="./carte.html">Commander</a>
+				<a class="btn-secondary __rouge-bord" href="./contact.html">Nous contacter</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="__pied">
+		<div class="__pied-contenu">
+			<div class="__pied-col"><strong>La Cerise</strong><p>Boulangerie-pâtisserie et restaurant, pour toute la famille.</p></div>
+			<div class="__pied-col"><h3>Navigation</h3><ul><li><a href="./index.html">Accueil</a></li><li><a href="./carte.html">Carte</a></li><li><a href="./apropos.html">À propos</a></li><li><a href="./contact.html">Contact</a></li></ul></div>
+			<div class="__pied-col"><h3>Nous trouver</h3><p>Moungali, Brazzaville<br>République du Congo</p></div>
+			<div class="__pied-col"><h3>Horaires</h3><p>Tous les jours<br>de 7 h à 21 h</p></div>
+		</div>
+		<p class="__pied-droits">© 2026 La Cerise. Tous droits réservés.</p>
+	</footer>
+</body>
+</html>

@@ -3,14 +3,188 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Accueil - la cerise</title>
-
+	<title>Accueil - La Cerise</title>
 	<link rel="stylesheet" href="./src/themes/global.css" />
 </head>
 <body>
-	<<header>
-	    <h1>La Cerise</h1>
+	<header class="__header">
+		<a class="__brand" href="#">
+			<img class="__brand-logo" src="./assets/logo.png" alt="Logo La Cerise, emblème">
+			<span class="__brand-name">La Cerise</span>
+		</a>
+		<nav class="__nav" aria-label="Navigation principale">
+			<ul>
+				<li><a href="#accueil" aria-current="page">Accueil</a></li>
+				<li><a href="./src/pages/carte.html">Carte</a></li>
+				<li><a href="./src/pages/apropos.html">À propos</a></li>
+				<li><a href="./src/pages/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="__end_header">
+			<a class="__panier" href="#" aria-label="Voir le panier">
+				<img src="./assets/panier.png" alt=""><span>Panier (02)</span>
+			</a>
+			<button type="button" class="btn-secondary" id="btn-reserved">Réserver</button>
+		</div>
 	</header>
+
+	<main>
+		<!-- HERO -->
+		<section class="__hero_section" id="accueil">
+			<div class="__cta_text">
+				<h2 class="__main-title">Bon appétit</h2>
+				<p class="__main-cta-text">Vous avez entendu parler de nous.<br>Maintenant, goûtez à La Cerise.</p>
+				<a class="btn-primary" href="./carte.html">Découvrir notre carte</a>
+			</div>
+			<div class="__img-cta">
+				<img src="./assets/img.png" alt="Burger, milkshake à la cerise et croissant">
+			</div>
+		</section>
+
+		<!-- LES PLUS DEMANDÉS -->
+		<section class="__populaires" id="carte" aria-labelledby="titre-populaires">
+			<h2 class="__section-title" id="titre-populaires">Les plus demandés</h2>
+			<div class="__filtres">
+				<div class="__filtres-liste" role="tablist" aria-label="Catégories">
+					<button type="button" id="cat-debut" class="__filtre is-active" role="tab" aria-selected="true">Boissons</button>
+					<button type="button" class="__filtre" role="tab" aria-selected="false">Salades</button>
+					<button type="button" class="__filtre" role="tab" aria-selected="false">Viennoiseries</button>
+					<button type="button" class="__filtre" role="tab" aria-selected="false">Gâteaux</button>
+					<button type="button" id="cat-fin" class="__filtre" role="tab" aria-selected="false">Burgers</button>
+				</div>
+				<div class="__filtres-nav">
+					<a class="__fleche" href="#cat-debut" aria-label="Catégories précédentes">&#8249;</a>
+					<a class="__fleche" href="#cat-fin" aria-label="Catégories suivantes">&#8250;</a>
+				</div>
+			</div>
+			<div class="__grille-plats" id="grille-plats">
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">3 500 FCFA</span>
+						<img src="./assets/salade.png" alt="Salade Cerise">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Salade Cerise</h3>
+					<p>Fraîche, croquante, vinaigrette maison</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">3 500 FCFA</span>
+						<img src="./assets/brownie.png" alt="Brownie aux noix">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Brownie aux noix</h3>
+					<p>Fondant, chocolat noir et noix croquantes</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">3 500 FCFA</span>
+						<img src="./assets/gateau-coeur.png" alt="Gâteau cœur à la cerise">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Gâteau cœur</h3>
+					<p>Biscuit moelleux, crème légère et cerise</p>
+				</article>
+			</div>
+		</section>
+
+		<!-- BANNIÈRES -->
+		<section class="__bannieres" aria-label="Nos univers">
+			<article class="__banniere __jaune">
+				<h3>Boulangerie</h3>
+				<p>La Cerise est une boulangerie.</p>
+				<a class="__pilule" href="#carte">Découvrir</a>
+				<img src="./assets/panier-pain.png" alt="Panier de pains et de croissants">
+			</article>
+			<article class="__banniere __rouge">
+				<span class="__cerise-deco" aria-hidden="true"></span>
+				<h3>La Cerise</h3>
+				<p>La Cerise est une boulangerie.</p>
+				<a class="__pilule" href="#carte">Voir la carte</a>
+			</article>
+			<article class="__banniere __orange">
+				<h3>Pâtisserie</h3>
+				<p>La Cerise est connue pour sa pâtisserie incroyable.</p>
+				<a class="__pilule" href="#carte">Découvrir</a>
+				<img src="./assets/cupcake.png" alt="Cupcake à la crème rose">
+			</article>
+		</section>
+
+		<!-- AVIS CLIENTS -->
+		<section class="__avis" aria-labelledby="titre-avis">
+			<h2 class="__section-title __rouge-titre" id="titre-avis">Les retours de nos clients</h2>
+			<p class="__avis-intro">Ce que disent celles et ceux qui passent chez nous chaque semaine.</p>
+			<div class="__avis-piste" id="avis-piste" tabindex="0" aria-label="Avis clients">
+				<figure class="__avis-carte" id="avis-1">
+					<div class="__etoiles" aria-label="4 étoiles sur 5">★★★★☆</div>
+					<blockquote>« Une belle découverte, l'ambiance est chaleureuse. Un vrai plaisir en famille. »</blockquote>
+					<figcaption><span class="__initiales">AK</span><span><b>Aimée K.</b><small>Cliente fidèle</small></span></figcaption>
+				</figure>
+				<figure class="__avis-carte" id="avis-2">
+					<div class="__etoiles" aria-label="5 étoiles sur 5">★★★★★</div>
+					<blockquote>« Je viens à La Cerise depuis d'un an, honnêtement, je dois dire que c'est mieux chaque fois. L'accueil est chaleureux et on me sert les meilleurs plats que j'aie goûtés. »</blockquote>
+					<figcaption><span class="__initiales">SM</span><span><b>Sarah M.</b><small>Cliente régulière</small></span></figcaption>
+				</figure>
+				<figure class="__avis-carte" id="avis-3">
+					<div class="__etoiles" aria-label="4 étoiles sur 5">★★★★☆</div>
+					<blockquote>« Je suis absolument amoureux du poulet braisé. Chaque bouchée est un régal. »</blockquote>
+					<figcaption><span class="__initiales">MP</span><span><b>Michel P.</b><small>Client régulier</small></span></figcaption>
+				</figure>
+			</div>
+			<nav class="__points" aria-label="Choisir un avis"><a href="#avis-1" aria-label="Avis 1"></a><a href="#avis-2" aria-label="Avis 2"></a><a href="#avis-3" aria-label="Avis 3"></a></nav>
+		</section>
+
+		<!-- ÉQUIPE -->
+		<section class="__equipe" id="apropos">
+			<div class="__equipe-texte">
+				<h2>Une équipe dynamique</h2>
+				<p>Derrière chaque plat, il y a une équipe passionnée qui vous accueille avec le sourire. Pour mieux nous connaître, cliquez sur le bouton ci-dessous.</p>
+				<a class="btn-primary" href="./apropos.html">À propos</a>
+			</div>
+			<div class="__equipe-visuel">
+				<img src="./assets/equipe.png" alt="L'équipe de La Cerise portant un gâteau et un plateau">
+			</div>
+		</section>
+
+		<!-- BANDEAU MARQUE -->
+		<section class="__marque" aria-label="La Cerise">
+			<div class="__marque-bloc">
+				<img src="./assets/logo-blanc.png" alt="Emblème La Cerise, boulangerie-pâtisserie">
+				<p>La Cerise<br>Mbonza Litama<br>na Pâtisserie</p>
+			</div>
+			<div class="__marque-actions">
+				<a class="btn-primary" href="#carte">Commander</a>
+				<a class="btn-secondary __rouge-bord" href="./contact.html">Réserver</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="__pied" id="contact">
+		<div class="__pied-contenu">
+			<div class="__pied-col">
+				<strong>La Cerise</strong>
+				<p>Boulangerie-pâtisserie et restaurant, pour toute la famille.</p>
+			</div>
+			<div class="__pied-col">
+				<h3>Navigation</h3>
+				<ul>
+					<li><a href="#accueil">Accueil</a></li>
+					<li><a href="#carte">Carte</a></li>
+					<li><a href="./apropos.html">À propos</a></li>
+				</ul>
+			</div>
+			<div class="__pied-col">
+				<h3>Nous trouver</h3>
+				<p>Moungali, Brazzaville<br>République du Congo</p>
+			</div>
+			<div class="__pied-col">
+				<h3>Horaires</h3>
+				<p>Tous les jours<br>de 7 h à 21 h</p>
+			</div>
+		</div>
+		<p class="__pied-droits">© 2026 La Cerise. Tous droits réservés.</p>
+		<div class="__pied-photo" role="img" aria-label="Brioches aux raisins"></div>
+	</footer>
+
 </body>
 </html>
-on 

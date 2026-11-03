@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carte - La Cerise</title>
+	<link rel="stylesheet" href="./styles/carte.css">
+	<link rel="stylesheet" href="./styles/global.css">
+</head>
+<body>
+	<header class="__header">
+		<a class="__brand" href="../../index.html">
+			<img class="__brand-logo" src="./assets/logo.png" alt="Logo La Cerise, emblème">
+			<span class="__brand-name">La Cerise</span>
+		</a>
+		<nav class="__nav" aria-label="Navigation principale">
+			<ul>
+				<li><a href="./index.html">Accueil</a></li>
+				<li><a href="./carte.html" aria-current="page">Carte</a></li>
+				<li><a href="./index.html#apropos">À propos</a></li>
+				<li><a href="./index.html#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="__end_header">
+			<a class="__panier" href="#" aria-label="Voir le panier">
+				<img src="./assets/panier.png" alt=""><span>Panier (02)</span>
+			</a>
+			<button type="button" class="btn-secondary" id="btn-reserved">Réserver</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="__carte-hero">
+			<h1 class="__main-title __carte-titre">Notre carte</h1>
+			<p class="__main-cta-text">Tout est préparé chaque jour, sur place.<br>Choisissez, on s'occupe du reste.</p>
+		</section>
+
+		<nav class="__carte-nav" aria-label="Catégories de la carte">
+			<ul><li><a href="#boissons">Boissons</a></li><li><a href="#salades">Salades</a></li><li><a href="#burgers">Burgers</a></li><li><a href="#viennoiseries">Viennoiseries</a></li><li><a href="#patisseries">Pâtisseries</a></li></ul>
+		</nav>
+
+		<section class="__categorie" id="boissons" aria-labelledby="titre-boissons">
+			<h2 class="__categorie-titre" id="titre-boissons">Boissons</h2>
+			<div class="__grille-plats">
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">2 500 FCFA</span>
+						<img src="./assets/carte/milkshake.png" alt="Milkshake cerise" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Milkshake cerise</h3>
+					<p>Onctueux, nappé de sirop de cerise</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">1 000 FCFA</span>
+						<img src="./assets/carte/bissap.png" alt="Jus de bissap" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Jus de bissap</h3>
+					<p>Frais, maison, légèrement sucré</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">1 200 FCFA</span>
+						<img src="./assets/carte/cafe.png" alt="Café crème" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Café crème</h3>
+					<p>Un café doux, servi bien chaud</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="__categorie" id="salades" aria-labelledby="titre-salades">
+			<h2 class="__categorie-titre" id="titre-salades">Salades</h2>
+			<div class="__grille-plats">
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">3 500 FCFA</span>
+						<img src="./assets/carte/salade.png" alt="Salade Cerise" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Salade Cerise</h3>
+					<p>Fraîche, croquante, vinaigrette maison</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">4 000 FCFA</span>
+						<img src="./assets/carte/salade-poulet.png" alt="Salade de poulet" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Salade de poulet</h3>
+					<p>Poulet grillé, crudités et œuf</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">2 500 FCFA</span>
+						<img src="./assets/carte/salade-fruits.png" alt="Salade de fruits" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Salade de fruits</h3>
+					<p>Fruits de saison, miel et menthe</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="__categorie" id="burgers" aria-labelledby="titre-burgers">
+			<h2 class="__categorie-titre" id="titre-burgers">Burgers</h2>
+			<div class="__grille-plats">
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">4 500 FCFA</span>
+						<img src="./assets/carte/burger.png" alt="Burger Cerise" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Burger Cerise</h3>
+					<p>Bœuf, cheddar, salade et tomate</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">4 000 FCFA</span>
+						<img src="./assets/carte/burger-poulet.png" alt="Burger poulet croustillant" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Burger poulet croustillant</h3>
+					<p>Poulet pané, sauce maison</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">3 800 FCFA</span>
+						<img src="./assets/carte/burger-vegetarien.png" alt="Burger végétarien" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Burger végétarien</h3>
+					<p>Galette de légumes et crudités</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="__categorie" id="viennoiseries" aria-labelledby="titre-viennoiseries">
+			<h2 class="__categorie-titre" id="titre-viennoiseries">Viennoiseries</h2>
+			<div class="__grille-plats">
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">800 FCFA</span>
+						<img src="./assets/carte/croissant.png" alt="Croissant" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Croissant</h3>
+					<p>Pur beurre, sorti du four du matin</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">900 FCFA</span>
+						<img src="./assets/carte/pain-chocolat.png" alt="Pain au chocolat" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Pain au chocolat</h3>
+					<p>Feuilleté doré, cœur de chocolat</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">1 000 FCFA</span>
+						<img src="./assets/carte/brioche.png" alt="Brioche aux raisins" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Brioche aux raisins</h3>
+					<p>Moelleuse, crème pâtissière</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="__categorie" id="patisseries" aria-labelledby="titre-patisseries">
+			<h2 class="__categorie-titre" id="titre-patisseries">Pâtisseries</h2>
+			<div class="__grille-plats">
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">3 500 FCFA</span>
+						<img src="./assets/carte/gateau-coeur.png" alt="Gâteau cœur" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Gâteau cœur</h3>
+					<p>Biscuit moelleux, crème légère et cerise</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">3 500 FCFA</span>
+						<img src="./assets/carte/brownie.png" alt="Brownie aux noix" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Brownie aux noix</h3>
+					<p>Fondant, chocolat noir et noix croquantes</p>
+				</article>
+				<article class="__plat">
+					<div class="__plat-visuel">
+						<span class="__prix">2 000 FCFA</span>
+						<img src="./assets/carte/cupcake.png" alt="Cupcake rose" loading="lazy">
+						<button type="button" class="btn-secondary">Ajouter au panier</button>
+					</div>
+					<h3>Cupcake rose</h3>
+					<p>Crème onctueuse et décors en sucre</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="__carte-fin">
+			<h2>Une envie particulière ?</h2>
+			<p>Commandez à emporter ou réservez votre table.</p>
+			<div class="__marque-actions">
+				<a class="btn-primary" href="#">Commander</a>
+				<a class="btn-secondary __rouge-bord" href="#">Réserver</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="__pied" id="contact">
+		<div class="__pied-contenu">
+			<div class="__pied-col"><strong>La Cerise</strong><p>Boulangerie-pâtisserie et restaurant, pour toute la famille.</p></div>
+			<div class="__pied-col"><h3>Navigation</h3><ul><li><a href="./index.html">Accueil</a></li><li><a href="./carte.html">Carte</a></li><li><a href="./index.html#apropos">À propos</a></li></ul></div>
+			<div class="__pied-col"><h3>Nous trouver</h3><p>Moungali, Brazzaville<br>République du Congo</p></div>
+			<div class="__pied-col"><h3>Horaires</h3><p>Tous les jours<br>de 7 h à 21 h</p></div>
+		</div>
+		<p class="__pied-droits">© 2026 La Cerise. Tous droits réservés.</p>
+	</footer>
+</body>
+</html>
