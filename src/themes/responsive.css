@@ -1,0 +1,115 @@
+/* ---------- responsive.css ----------
+   Surcouche responsive du site (menu hamburger inclus).
+   Les @media d'origine restent dans leurs feuilles respectives.
+   Supprimer ce fichier (et son @import dans base.css) suffit donc
+   à retrouver exactement l'état précédent du site.
+   Les sélecteurs sont préfixés par html pour gagner en spécificité
+   sur les feuilles de base, chargées après cet import.
+--------------------------------------------- */
+
+/* ============================================================
+   Tablette / mobile large (<= 900px)
+   ============================================================ */
+@media (max-width: 900px) {
+
+    /* --- En-tête --- */
+    html .__header { grid-template-columns: 1fr auto; row-gap: 12px; align-items: center; }
+
+    /* --- Menu hamburger, en CSS pur (aucun JavaScript) --- */
+    html .__nav-toggle-label {
+        display: grid;
+        place-items: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        border: 1px solid var(--encre);
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color .2s, border-color .2s;
+    }
+    html .__nav-toggle-label:hover { background: var(--beurre); border-color: var(--beurre); }
+    html .__nav-toggle:focus-visible + .__nav-toggle-label { outline: 3px solid var(--beurre); outline-offset: 3px; }
+
+    html .__nav-toggle-barre {
+        width: 24px;
+        height: 2px;
+        border-radius: 999px;
+        background: var(--encre);
+        transition: transform .25s ease, opacity .2s ease;
+    }
+
+    /* Transformation en croix à l'ouverture */
+    html .__nav-toggle:checked + .__nav-toggle-label .__nav-toggle-barre:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    html .__nav-toggle:checked + .__nav-toggle-label .__nav-toggle-barre:nth-child(2) { opacity: 0; }
+    html .__nav-toggle:checked + .__nav-toggle-label .__nav-toggle-barre:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* --- Panneau de navigation --- */
+    html .__nav { display: none; grid-column: 1 / -1; grid-row: 2; padding-block: 8px; }
+    html .__nav ul { flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 4px; }
+    html .__nav a { display: block; padding: 12px 16px; border-bottom: 0; border-radius: 12px; }
+    html .__nav a:hover, html .__nav a[aria-current="page"] { background: var(--rose); border-bottom-color: transparent; }
+
+    html .__end_header { display: none; grid-column: 1 / -1; grid-row: 3; justify-content: center; flex-wrap: wrap; padding-block: 8px; }
+
+    /* Ouverture du menu via la case à cocher */
+    html .__nav-toggle:checked ~ .__nav { display: block; }
+    html .__nav-toggle:checked ~ .__end_header { display: flex; }
+
+    /* --- Grilles générales --- */
+    html .__grille-plats,
+    html .__bannieres { grid-template-columns: repeat(2, 1fr); }
+    html .__equipe,
+    html .__histoire { grid-template-columns: 1fr; }
+    html .__valeurs-grille { grid-template-columns: 1fr; }
+
+    /* --- Pied de page --- */
+    html .__pied-contenu { grid-template-columns: 1fr 1fr; }
+    html .__pied-contact .__pied-contenu { grid-template-columns: 1fr 1fr; }
+}
+
+/* ============================================================
+   Tablette étroite (<= 800px)
+   ============================================================ */
+@media (max-width: 800px) {
+    html .__404 { grid-template-columns: 1fr; text-align: center; }
+    html .__404_text { align-items: center; }
+    html .__404_actions { justify-content: center; }
+    html .__image_404 img { max-height: 55vh; }
+}
+
+/* ============================================================
+   Mobile (<= 560px)
+   ============================================================ */
+@media (max-width: 560px) {
+    /* En-tête et contenu */
+    html .__panier span { display: none; }
+    html .__img-cta::before { border-radius: 28px 28px 0 0; }
+    html .__grille-plats,
+    html .__bannieres { grid-template-columns: 1fr; }
+    html .__marque-bloc { flex-direction: column; text-align: center; }
+    html .__marque-bloc img { border-right: 0; padding-right: 0; }
+    html .__marque-actions { justify-content: center; }
+
+    /* Pied de page */
+    html .__pied-contenu { grid-template-columns: 1fr; }
+    html .__pied-contact .__pied-contenu { grid-template-columns: 1fr; }
+
+    /* Contact */
+    html .__champs-duo { grid-template-columns: 1fr; }
+    html .__formulaire .btn-primary { align-self: stretch; }
+
+    /* Confirmation */
+    html .__succes-actions { flex-direction: column; }
+    html .__succes-actions .btn-primary,
+    html .__succes-actions .btn-secondary { width: 100%; }
+
+    /* Carte */
+    html .__carte-nav ul { justify-content: flex-start; }
+    html .__carte-fin { padding-inline: 20px; }
+}
+
+/* Respect des préférences d'accessibilité */
+@media (prefers-reduced-motion: reduce) {
+    html .__nav-toggle-barre { transition: none; }
+}

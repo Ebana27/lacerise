@@ -1,0 +1,22 @@
+/* ---------- succes.css ---------- */
+@import url('../../themes/global.css');
+
+.__succes { display: grid; place-items: center; min-height: calc(100vh - 200px); padding: clamp(32px, 6vw, 80px) 16px; }
+
+.__succes-carte { position: relative; width: min(100%, 680px); text-align: center; padding: clamp(32px, 6vw, 64px); border: 2px solid var(--beurre); border-radius: 32px; background: transparent; }
+
+.__succes-icone { display: grid; place-items: center; width: 88px; height: 88px; margin: 0 auto 24px; border-radius: 50%; background: var(--feuille); color: #fff; font-size: 2.5rem; font-weight: 700; }
+
+.__succes-code { font: 700 .8rem var(--police-texte); letter-spacing: .3em; text-transform: uppercase; color: var(--cerise-red); }
+
+.__succes-carte h1 { margin: 8px 0 16px; font-size: clamp(1.8rem, 4vw, 3rem); text-transform: uppercase; color: var(--cerise); }
+
+.__succes-message { max-width: 46ch; margin: 0 auto 32px; line-height: 1.6; }
+
+.__succes-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+
+@media (max-width: 560px) {
+	.__succes-actions { flex-direction: column; }
+	.__succes-actions .btn-primary, .__succes-actions .btn-secondary { width: 100%; }
+}
+

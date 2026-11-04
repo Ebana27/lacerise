@@ -1,0 +1,29 @@
+/* ---------- 404.css ---------- */
+@import url('../src/themes/global.css');
+
+body { min-height: 100vh; display: flex; flex-direction: column; background: var(--background); }
+.__header { grid-template-columns: 1fr; }
+
+.__404 { flex: 1; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(16px, 4vw, 56px); width: min(100% - 32px, 1240px); margin-inline: auto; padding-block: clamp(16px, 4vw, 48px); overflow: hidden; }
+
+/* Texte */
+.__404_text { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.__404_code { font: 600 clamp(5rem, 16vw, 12rem)/.9 var(--police-titre); letter-spacing: .06em; color: var(--cerise-red); }
+.__404_text h1 { font-size: clamp(1.5rem, 3.5vw, 2.5rem); line-height: 1.15; }
+.__404_message { max-width: 42ch; font-size: clamp(1rem, 1.6vw, 1.2rem); line-height: 1.6; color: #555; }
+.__404_actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.__404_actions .btn-secondary { padding: 14px 32px; font-size: 1rem; }
+
+/* Mascotte */
+.__image_404 { position: relative; display: flex; justify-content: center; align-items: flex-end; align-self: stretch; }
+.__image_404::before { content: ""; position: absolute; inset: 12% 8% 0; background: var(--rose); border-radius: 48px 48px 0 0; }
+.__image_404 img { position: relative; width: auto; max-width: 100%; max-height: min(78vh, 760px); object-fit: contain; }
+
+/* Adaptatif */
+@media (max-width: 800px) {
+    .__404 { grid-template-columns: 1fr; text-align: center; }
+    .__404_text { align-items: center; }
+    .__404_actions { justify-content: center; }
+    .__image_404 img { max-height: 55vh; }
+}
+

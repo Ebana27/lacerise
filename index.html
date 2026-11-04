@@ -4,6 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Accueil - La Cerise</title>
+	<meta name="description" content="Boulangerie-pâtisserie et restaurant à Moungali, Brazzaville. Pains, viennoiseries, pâtisseries et plats faits maison chaque jour.">
+	<link rel="icon" type="image/png" href="./favicon.png">
+	<link rel="apple-touch-icon" href="./favicon.png">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="La Cerise">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:title" content="Accueil - La Cerise">
+	<meta property="og:description" content="Boulangerie-pâtisserie et restaurant à Moungali, Brazzaville. Pains, viennoiseries, pâtisseries et plats faits maison chaque jour.">
+	<meta property="og:image" content="./assets/img.png">
+	<meta property="og:url" content="./index.html">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Accueil - La Cerise">
+	<meta name="twitter:description" content="Boulangerie-pâtisserie et restaurant à Moungali, Brazzaville. Pains, viennoiseries, pâtisseries et plats faits maison chaque jour.">
+	<meta name="twitter:image" content="./assets/img.png">
 	<link rel="stylesheet" href="./src/themes/global.css" />
 </head>
 <body>
@@ -12,6 +26,12 @@
 			<img class="__brand-logo" src="./assets/logo.png" alt="Logo La Cerise, emblème">
 			<span class="__brand-name">La Cerise</span>
 		</a>
+		<input type="checkbox" id="nav-toggle" class="__nav-toggle" aria-label="Ouvrir le menu">
+		<label for="nav-toggle" class="__nav-toggle-label" aria-label="Ouvrir le menu">
+			<span class="__nav-toggle-barre" aria-hidden="true"></span>
+			<span class="__nav-toggle-barre" aria-hidden="true"></span>
+			<span class="__nav-toggle-barre" aria-hidden="true"></span>
+		</label>
 		<nav class="__nav" aria-label="Navigation principale">
 			<ul>
 				<li><a href="#accueil" aria-current="page">Accueil</a></li>
@@ -22,8 +42,8 @@
 		</nav>
 		<div class="__end_header">
 			<a class="__panier" href="#" aria-label="Voir le panier">
-				<img src="./assets/panier.png" alt=""><span>Panier (02)</span>
-			</a>
+			<img src="./assets/panier.png" alt=""><span>Panier (02)</span>
+		</a>
 			<button type="button" class="btn-secondary" id="btn-reserved">Réserver</button>
 		</div>
 	</header>
@@ -34,7 +54,7 @@
 			<div class="__cta_text">
 				<h2 class="__main-title">Bon appétit</h2>
 				<p class="__main-cta-text">Vous avez entendu parler de nous.<br>Maintenant, goûtez à La Cerise.</p>
-				<a class="btn-primary" href="./carte.html">Découvrir notre carte</a>
+				<a class="btn-primary" href="./src/pages/carte.html">Découvrir notre carte</a>
 			</div>
 			<div class="__img-cta">
 				<img src="./assets/img.png" alt="Burger, milkshake à la cerise et croissant">
@@ -88,8 +108,12 @@
 			</div>
 		</section>
 
-		<!-- BANNIÈRES -->
-		<section class="__bannieres" aria-label="Nos univers">
+		<!-- NOS SERVICES -->
+		<section class="__bannieres" aria-labelledby="titre-services">
+			<div class="__bannieres-entete">
+				<h2 class="__section-title" id="titre-services">Nos services</h2>
+				<p>Ce que fait La Cerise</p>
+			</div>
 			<article class="__banniere __jaune">
 				<h3>Boulangerie</h3>
 				<p>La Cerise est une boulangerie.</p>
@@ -139,7 +163,7 @@
 			<div class="__equipe-texte">
 				<h2>Une équipe dynamique</h2>
 				<p>Derrière chaque plat, il y a une équipe passionnée qui vous accueille avec le sourire. Pour mieux nous connaître, cliquez sur le bouton ci-dessous.</p>
-				<a class="btn-primary" href="./apropos.html">À propos</a>
+				<a class="btn-primary" href="./src/pages/apropos.html">À propos</a>
 			</div>
 			<div class="__equipe-visuel">
 				<img src="./assets/equipe.png" alt="L'équipe de La Cerise portant un gâteau et un plateau">
@@ -149,12 +173,12 @@
 		<!-- BANDEAU MARQUE -->
 		<section class="__marque" aria-label="La Cerise">
 			<div class="__marque-bloc">
-				<img src="./assets/logo-blanc.png" alt="Emblème La Cerise, boulangerie-pâtisserie">
+				<img src="./assets/logo_white.png" alt="Emblème La Cerise, boulangerie-pâtisserie">
 				<p>La Cerise<br>Mbonza Litama<br>na Pâtisserie</p>
 			</div>
 			<div class="__marque-actions">
 				<a class="btn-primary" href="#carte">Commander</a>
-				<a class="btn-secondary __rouge-bord" href="./contact.html">Réserver</a>
+				<a class="btn-secondary __rouge-bord" href="./src/pages/contact.html">Réserver</a>
 			</div>
 		</section>
 	</main>
@@ -170,7 +194,7 @@
 				<ul>
 					<li><a href="#accueil">Accueil</a></li>
 					<li><a href="#carte">Carte</a></li>
-					<li><a href="./apropos.html">À propos</a></li>
+					<li><a href="./src/pages/apropos.html">À propos</a></li>
 				</ul>
 			</div>
 			<div class="__pied-col">

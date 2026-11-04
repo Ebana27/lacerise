@@ -4,25 +4,45 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact - La Cerise</title>
+	<meta name="description" content="Une question, une réservation ou une commande ? Contactez La Cerise à Moungali, Brazzaville.">
+	<link rel="icon" type="image/png" href="../../favicon.png">
+	<link rel="apple-touch-icon" href="../../favicon.png">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="La Cerise">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:title" content="Contact - La Cerise">
+	<meta property="og:description" content="Une question, une réservation ou une commande ? Contactez La Cerise à Moungali, Brazzaville.">
+	<meta property="og:image" content="../../assets/img.png">
+	<meta property="og:url" content="./contact.html">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Contact - La Cerise">
+	<meta name="twitter:description" content="Une question, une réservation ou une commande ? Contactez La Cerise à Moungali, Brazzaville.">
+	<meta name="twitter:image" content="../../assets/img.png">
 	<link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body>
-	<header class="__header">
-		<a class="__brand" href="./index.html">
-			<img class="__brand-logo" src="./assets/logo.png" alt="Logo La Cerise, emblème">
+    <header class="__header">
+		<a class="__brand" href="../../index.html">
+			<img class="__brand-logo" src="../../assets/logo.png" alt="Logo La Cerise, emblème">
 			<span class="__brand-name">La Cerise</span>
 		</a>
+		<input type="checkbox" id="nav-toggle" class="__nav-toggle" aria-label="Ouvrir le menu">
+		<label for="nav-toggle" class="__nav-toggle-label" aria-label="Ouvrir le menu">
+			<span class="__nav-toggle-barre" aria-hidden="true"></span>
+			<span class="__nav-toggle-barre" aria-hidden="true"></span>
+			<span class="__nav-toggle-barre" aria-hidden="true"></span>
+		</label>
 		<nav class="__nav" aria-label="Navigation principale">
 			<ul>
-				<li><a href="./index.html">Accueil</a></li>
-				<li><a href="./carte.html">Carte</a></li>
+				<li><a href="../../index.html">Accueil</a></li>
+				<li><a href="carte.html">Carte</a></li>
 				<li><a href="./apropos.html">À propos</a></li>
 				<li><a href="./contact.html" aria-current="page">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="__end_header">
 			<a class="__panier" href="#" aria-label="Voir le panier">
-				<img src="./assets/panier.png" alt=""><span>Panier (02)</span>
+				<img src="../../assets/panier.png" alt=""><span>Panier (02)</span>
 			</a>
 			<button type="button" class="btn-secondary" id="btn-reserved">Réserver</button>
 		</div>
@@ -35,7 +55,7 @@
 		</section>
 
 		<section class="__contact">
-			<form class="__formulaire" action="#" method="post">
+			<form class="__formulaire" action="./succes.html" method="get">
 				<h2>Envoyer un message</h2>
 				<div class="__champ">
 					<label for="nom">Nom complet</label>
@@ -67,20 +87,16 @@
 				<button type="submit" class="btn-primary">Envoyer le message</button>
 			</form>
 
-			<aside class="__infos" aria-label="Informations pratiques">
-				<article class="__info __jaune"><h3>Adresse</h3><p>La Cerise<br>Moungali, Brazzaville<br>République du Congo</p></article>
-				<article class="__info __orange"><h3>Horaires</h3><p>Tous les jours<br>de 7 h à 21 h</p></article>
-				<article class="__info __rouge"><h3>Téléphone</h3><p>+242 00 000 00 00</p></article>
-			</aside>
 		</section>
 	</main>
 
-	<footer class="__pied">
+	<footer class="__pied __pied-contact">
 		<div class="__pied-contenu">
 			<div class="__pied-col"><strong>La Cerise</strong><p>Boulangerie-pâtisserie et restaurant, pour toute la famille.</p></div>
-			<div class="__pied-col"><h3>Navigation</h3><ul><li><a href="./index.html">Accueil</a></li><li><a href="./carte.html">Carte</a></li><li><a href="./apropos.html">À propos</a></li><li><a href="./contact.html">Contact</a></li></ul></div>
-			<div class="__pied-col"><h3>Nous trouver</h3><p>Moungali, Brazzaville<br>République du Congo</p></div>
+			<div class="__pied-col"><h3>Navigation</h3><ul><li><a href="../../index.html">Accueil</a></li><li><a href="./carte.html">Carte</a></li><li><a href="./apropos.html">À propos</a></li><li><a href="./contact.html">Contact</a></li></ul></div>
+			<div class="__pied-col"><h3>Adresse</h3><p>La Cerise<br>Moungali, Brazzaville<br>République du Congo</p></div>
 			<div class="__pied-col"><h3>Horaires</h3><p>Tous les jours<br>de 7 h à 21 h</p></div>
+			<div class="__pied-col"><h3>Téléphone</h3><p><a href="tel:+24200000000">+242 00 000 00 00</a></p></div>
 		</div>
 		<p class="__pied-droits">© 2026 La Cerise. Tous droits réservés.</p>
 	</footer>

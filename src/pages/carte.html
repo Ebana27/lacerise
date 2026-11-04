@@ -4,26 +4,46 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Carte - La Cerise</title>
+	<meta name="description" content="Découvrez la carte de La Cerise : boissons, salades, burgers, viennoiseries et pâtisseries préparés chaque jour.">
+	<link rel="icon" type="image/png" href="../../favicon.png">
+	<link rel="apple-touch-icon" href="../../favicon.png">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="La Cerise">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:title" content="Carte - La Cerise">
+	<meta property="og:description" content="Découvrez la carte de La Cerise : boissons, salades, burgers, viennoiseries et pâtisseries préparés chaque jour.">
+	<meta property="og:image" content="../../assets/img.png">
+	<meta property="og:url" content="./carte.html">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Carte - La Cerise">
+	<meta name="twitter:description" content="Découvrez la carte de La Cerise : boissons, salades, burgers, viennoiseries et pâtisseries préparés chaque jour.">
+	<meta name="twitter:image" content="../../assets/img.png">
 	<link rel="stylesheet" href="./styles/carte.css">
-	<link rel="stylesheet" href="./styles/global.css">
+	<link rel="stylesheet" href="../themes/global.css">
 </head>
 <body>
 	<header class="__header">
 		<a class="__brand" href="../../index.html">
-			<img class="__brand-logo" src="./assets/logo.png" alt="Logo La Cerise, emblème">
+			<img class="__brand-logo" src="../../assets/logo.png" alt="Logo La Cerise, emblème">
 			<span class="__brand-name">La Cerise</span>
 		</a>
+		<input type="checkbox" id="nav-toggle" class="__nav-toggle" aria-label="Ouvrir le menu">
+		<label for="nav-toggle" class="__nav-toggle-label" aria-label="Ouvrir le menu">
+			<span class="__nav-toggle-barre" aria-hidden="true"></span>
+			<span class="__nav-toggle-barre" aria-hidden="true"></span>
+			<span class="__nav-toggle-barre" aria-hidden="true"></span>
+		</label>
 		<nav class="__nav" aria-label="Navigation principale">
 			<ul>
-				<li><a href="./index.html">Accueil</a></li>
-				<li><a href="./carte.html" aria-current="page">Carte</a></li>
-				<li><a href="./index.html#apropos">À propos</a></li>
-				<li><a href="./index.html#contact">Contact</a></li>
+				<li><a href="../../index.html">Accueil</a></li>
+				<li><a href="carte.html" aria-current="page">Carte</a></li>
+				<li><a href="./apropos.html">À propos</a></li>
+				<li><a href="./contact.html">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="__end_header">
 			<a class="__panier" href="#" aria-label="Voir le panier">
-				<img src="./assets/panier.png" alt=""><span>Panier (02)</span>
+				<img src="../../assets/panier.png" alt=""><span>Panier (02)</span>
 			</a>
 			<button type="button" class="btn-secondary" id="btn-reserved">Réserver</button>
 		</div>
@@ -45,7 +65,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">2 500 FCFA</span>
-						<img src="./assets/carte/milkshake.png" alt="Milkshake cerise" loading="lazy">
+						<img src="../../assets/milkshake.png" alt="Milkshake cerise" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Milkshake cerise</h3>
@@ -54,7 +74,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">1 000 FCFA</span>
-						<img src="./assets/carte/bissap.png" alt="Jus de bissap" loading="lazy">
+						<img src="../../assets/bissap.png" alt="Jus de bissap" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Jus de bissap</h3>
@@ -63,7 +83,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">1 200 FCFA</span>
-						<img src="./assets/carte/cafe.png" alt="Café crème" loading="lazy">
+						<img src="../../assets/cafe.png" alt="Café crème" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Café crème</h3>
@@ -78,7 +98,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">3 500 FCFA</span>
-						<img src="./assets/carte/salade.png" alt="Salade Cerise" loading="lazy">
+						<img src="../../assets/salade-fruits.png" alt="Salade Cerise" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Salade Cerise</h3>
@@ -87,7 +107,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">4 000 FCFA</span>
-						<img src="./assets/carte/salade-poulet.png" alt="Salade de poulet" loading="lazy">
+						<img src="../../assets/salade-poulet.png" alt="Salade de poulet" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Salade de poulet</h3>
@@ -96,7 +116,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">2 500 FCFA</span>
-						<img src="./assets/carte/salade-fruits.png" alt="Salade de fruits" loading="lazy">
+						<img src="../../assets/salade-fruits.png" alt="Salade de fruits" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Salade de fruits</h3>
@@ -111,7 +131,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">4 500 FCFA</span>
-						<img src="./assets/carte/burger.png" alt="Burger Cerise" loading="lazy">
+						<img src="../../assets/burger.png" alt="Burger Cerise" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Burger Cerise</h3>
@@ -120,7 +140,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">4 000 FCFA</span>
-						<img src="./assets/carte/burger-poulet.png" alt="Burger poulet croustillant" loading="lazy">
+						<img src="../../assets/burger-vegetarien.png" alt="Burger poulet croustillant" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Burger poulet croustillant</h3>
@@ -129,7 +149,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">3 800 FCFA</span>
-						<img src="./assets/carte/burger-vegetarien.png" alt="Burger végétarien" loading="lazy">
+						<img src="../../assets/burger-vegetarien.png" alt="Burger végétarien" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Burger végétarien</h3>
@@ -144,7 +164,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">800 FCFA</span>
-						<img src="./assets/carte/croissant.png" alt="Croissant" loading="lazy">
+						<img src="../../assets/croissant.png" alt="Croissant" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Croissant</h3>
@@ -153,7 +173,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">900 FCFA</span>
-						<img src="./assets/carte/pain-chocolat.png" alt="Pain au chocolat" loading="lazy">
+						<img src="../../assets/cupcake.png" alt="Pain au chocolat" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Pain au chocolat</h3>
@@ -162,7 +182,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">1 000 FCFA</span>
-						<img src="./assets/carte/brioche.png" alt="Brioche aux raisins" loading="lazy">
+						<img src="../../assets/milkshake.png" alt="Brioche aux raisins" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Brioche aux raisins</h3>
@@ -177,7 +197,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">3 500 FCFA</span>
-						<img src="./assets/carte/gateau-coeur.png" alt="Gâteau cœur" loading="lazy">
+						<img src="../../assets/gateau-coeur.png" alt="Gâteau cœur" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Gâteau cœur</h3>
@@ -186,7 +206,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">3 500 FCFA</span>
-						<img src="./assets/carte/brownie.png" alt="Brownie aux noix" loading="lazy">
+						<img src="../../assets/brownie.png" alt="Brownie aux noix" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Brownie aux noix</h3>
@@ -195,7 +215,7 @@
 				<article class="__plat">
 					<div class="__plat-visuel">
 						<span class="__prix">2 000 FCFA</span>
-						<img src="./assets/carte/cupcake.png" alt="Cupcake rose" loading="lazy">
+						<img src="../../assets/cupcake.png" alt="Cupcake rose" loading="lazy">
 						<button type="button" class="btn-secondary">Ajouter au panier</button>
 					</div>
 					<h3>Cupcake rose</h3>
@@ -217,7 +237,7 @@
 	<footer class="__pied" id="contact">
 		<div class="__pied-contenu">
 			<div class="__pied-col"><strong>La Cerise</strong><p>Boulangerie-pâtisserie et restaurant, pour toute la famille.</p></div>
-			<div class="__pied-col"><h3>Navigation</h3><ul><li><a href="./index.html">Accueil</a></li><li><a href="./carte.html">Carte</a></li><li><a href="./index.html#apropos">À propos</a></li></ul></div>
+			<div class="__pied-col"><h3>Navigation</h3><ul><li><a href="../../index.html">Accueil</a></li><li><a href="./carte.html">Carte</a></li><li><a href="../../index.html#apropos">À propos</a></li></ul></div>
 			<div class="__pied-col"><h3>Nous trouver</h3><p>Moungali, Brazzaville<br>République du Congo</p></div>
 			<div class="__pied-col"><h3>Horaires</h3><p>Tous les jours<br>de 7 h à 21 h</p></div>
 		</div>
